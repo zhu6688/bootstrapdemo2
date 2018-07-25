@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="demo2.css">
+</head>
+<body>
+
+<!-- 导航 -->
+<nav class="navbar navbar-default">
+    <div class="container">
+        <!--小屏幕导航按钮和logo-->
+        <div class="navbar-header">
+            <button class="navbar-toggle" data-toggle="collapse" data-target="#index-nav">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button> 
+            <a href="index.html" class="navbar-brand">Admin</a>
+        </div>
+        <!-- 导航 -->
+        <div class="navbar-collapse collapse" id="index-nav">
+            <ul class="nav navbar-nav">    
+                <li class="active"><a href="index.html"><i class="glyphicon glyphicon-home"></i>&nbsp;&nbsp;后台首页</a></li>
+                <li><a href="user_list.html"><i class="glyphicon glyphicon-user"></i>&nbsp;&nbsp;用户管理</a></li>
+                <li><a href="content.html"><i class="glyphicon glyphicon-list-alt"></i>&nbsp;&nbsp;内容管理</a></li>
+                <li><a href="tag.html"><i class="glyphicon glyphicon-tags"></i>&nbsp;&nbsp;标签管理</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right"> 
+                <li class="dropdown">
+                    <a class="dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                            admin
+                        <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                        <li><a href="index.html"><i class="glyphicon glyphicon-screenshot"></i>&nbsp;&nbsp;前台首页</a></li>
+                        <li><a href="index.html"><i class="glyphicon glyphicon-user"></i>&nbsp;&nbsp;个人主页</a></li>
+                        <li><a href="index.html"><i class="glyphicon glyphicon-cog"></i>&nbsp;&nbsp;个人设置</a></li>
+                        <li><a href="index.html"><i class="glyphicon glyphicon-credit-card"></i>&nbsp;&nbsp;账户中心</a></li>
+                        <li><a href="index.html"><i class="glyphicon glyphicon-heart-empty"></i>&nbsp;&nbsp;我的收藏</a></li>
+                    </ul>
+                </li>   
+                
+                <li><a href="#bbs"><i class="glyphicon glyphicon-off"></i>&nbsp;&nbsp;退出</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!--警告框-->
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="alert alert-danger alert-dismissible fade in" role="alert">
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <p>sdkashdkashdfklaskl</p>
+                <p>
+                    <button class="btn btn-primary" data-dismiss="alert">删除</button>
+                </p>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="panel panel-default">
+                <div class="panel-heading">网站数据统计</div>
+                <div class="panel-body">
+                    <table class="table table-hover">
+                        <thead>
+                            <tr>
+                                <th>统计项目</th>
+                                <th>昨日</th>
+                                <th>今日</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">注册会员</th>
+                                <td>10</td>
+                                <td>56</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">登录会员</th>
+                                <td>10</td>
+                                <td>56</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">今日发帖</th>
+                                <td>10</td>
+                                <td>56</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">昨日发帖</th>
+                                <td>10</td>
+                                <td>56</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="panel panel-default">
+                <div class="panel-heading">网站热帖</div>
+                <div class="list-group">
+                    <li class="list-group-item">
+                        <a href="javascript:;"><i class="glyphicon glyphicon-list-alt"></i>&nbsp;&nbsp;这是一顿文字<small class="pull-right">2018-05-06</small></a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="javascript:;"><i class="glyphicon glyphicon-list-alt"></i>&nbsp;&nbsp;这是一顿文字<small class="pull-right">2018-05-06</small></a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="javascript:;"><i class="glyphicon glyphicon-list-alt"></i>&nbsp;&nbsp;这是一顿文字<small class="pull-right">2018-05-06</small></a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="javascript:;"><i class="glyphicon glyphicon-list-alt"></i>&nbsp;&nbsp;这是一顿文字<small class="pull-right">2018-05-06</small></a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="javascript:;"><i class="glyphicon glyphicon-list-alt"></i>&nbsp;&nbsp;这是一顿文字<small class="pull-right">2018-05-06</small></a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="javascript:;"><i class="glyphicon glyphicon-list-alt"></i>&nbsp;&nbsp;这是一顿文字<small class="pull-right">2018-05-06</small></a>
+                    </li>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="panel panel-default">
+                <div class="panel-heading">今日方可统计</div>
+                <div class="panel-body">
+                    <canvas id="myChart" class="col-md-12"></canvas>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="panel panel-default">
+                <div class="panel-heading">今日方可统计</div>
+                <div class="panel-body" id="jindutiao">
+                    <p>内存使用率 40%</p>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+                        </div>
+                    </div>
+                    <p>内存使用率 40%</p>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%">
+                        </div>
+                    </div>
+                    <p>内存使用率 40%</p>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
+                        </div>
+                    </div>
+                    <p>内存使用率 40%</p>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    团队留言板
+                </div>
+                <div class="panel-body">
+                    <div class="col-md-7">
+                        <div class="media well">
+                            <div class="media-left">
+                                <a href="#">
+                                <img width="60" class="media-object" src="img/菠萝.png">
+                                </a>
+                            </div>
+                            <div class="media-body">
+                                <h4 class="media-heading">Media heading</h4>
+                                三家分晋；手动发窘手动ID快乐十分克里斯多夫；说的
+                            </div>
+                        </div>
+                        <div class="media well">
+                            <div class="media-body text-right">
+                                <h4 class="media-heading">Media heading</h4>
+                                快乐十分克里斯多夫；说的
+                            </div>
+                            <div class="media-right">
+                                <a href="#">
+                                <img width="60" class="media-object" src="img/草莓.png">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="media well">
+                            <div class="media-body text-right">
+                                <h4 class="media-heading">Media heading</h4>
+                                快乐十分克里斯多夫；说的
+                            </div>
+                            <div class="media-right">
+                                <a href="#">
+                                <img width="60" class="media-object" src="img/草莓.png">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="media well">
+                            <div class="media-left">
+                                <a href="#">
+                                <img width="60" class="media-object" src="img/菠萝.png">
+                                </a>
+                            </div>
+                            <div class="media-body">
+                                <h4 class="media-heading">Media heading</h4>
+                                三家分晋；手动发窘手动ID快乐十分克里斯多夫；说的
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-5">
+                        <form action="#">
+                            <div class="form-group">
+                                <label for="text1">输入留言内容</label>
+                                <textarea name="" id="text1" cols="10" rows="5" class="form-control "></textarea>  
+                                <button class="mar_t15 btn btn-primary" type="submit">留言</button>
+                            </div>
+                        </form>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                团队联系手册
+                            </div>
+                            <div class="panel-body">
+                                <ul class="list-group">
+                                    <li class="list-group-item">
+                                        站长（李小龙）：<span class="glyphicon glyphicon-phone"></span> 12312313
+                                    </li>
+                                    <li class="list-group-item">
+                                        站长（李小龙）：<span class="glyphicon glyphicon-phone"></span> 12312313
+                                    </li>
+                                    <li class="list-group-item">
+                                        站长（李小龙）：<span class="glyphicon glyphicon-phone"></span> 12312313
+                                    </li>
+                                    <li class="list-group-item">
+                                        站长（李小龙）：<span class="glyphicon glyphicon-phone"></span> 12312313
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<!--footer-->
+<footer>
+    <div class="container">
+            广播电视节目制作经营许可证：（沪）字第1248号 | 网络文化经营许可证：沪网文[2016]2296-134号 | 信息网络传播视听节目许可证：0910417 | 互联
+    </div>
+</footer>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.js"></script>
+<script>
+var ctx = document.getElementById("myChart").getContext('2d');
+var myChart = new Chart(ctx, {
+    type: 'bar',
+    data: {
+        labels: ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"],
+        datasets: [{
+            label: '什么',
+            data: [12, 19, 3, 5, 2, 3],
+            backgroundColor: [
+                'rgba(255, 99, 132, 0.2)',
+                'rgba(54, 162, 235, 0.2)',
+                'rgba(255, 206, 86, 0.2)',
+                'rgba(75, 192, 192, 0.2)',
+                'rgba(153, 102, 255, 0.2)',
+                'rgba(255, 159, 64, 0.2)'
+            ],
+            borderColor: [
+                'rgba(255,99,132,1)',
+                'rgba(54, 162, 235, 1)',
+                'rgba(255, 206, 86, 1)',
+                'rgba(75, 192, 192, 1)',
+                'rgba(153, 102, 255, 1)',
+                'rgba(255, 159, 64, 1)'
+            ],
+            borderWidth: 1
+        }]
+    },
+    options: {
+        scales: {
+            yAxes: [{
+                ticks: {
+                    beginAtZero:true
+                }
+            }]
+        }
+    }
+});
+</script>
+<script src="node_modules/jquery/dist/jquery.js"></script>    
+<script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+</body>
+</html>

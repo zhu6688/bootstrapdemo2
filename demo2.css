@@ -1,0 +1,75 @@
+body{
+    font-family: '微软雅黑';
+}
+
+
+/*进度条下边距*/
+.progress{
+    margin-bottom:5px;
+}
+#jindutiao p{
+    margin-bottom:8px;
+}
+
+.mar_t15{
+    margin-top:15px;
+}
+.pad0{
+    padding:0;
+}
+
+.page-header{
+    margin-top:0;
+}
+.page-header h2{
+    margin:0px;
+    font-size:16px;
+}
+
+.user_search{
+    padding:10px;
+    border: 1px solid #ccc;
+    border-top:none;
+}
+
+.add_content{
+    padding:10px;
+}
+
+.taglist{
+    padding-top:15px;
+}
+.taglist .alert{
+    margin-left:10px;
+    padding:5px 35px 5px 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer{
+    text-align: center;
+    padding:30px 0;
+}
